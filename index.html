@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusList | Professional Daily Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="todo-container">
+        <header class="main-header">
+            <div class="date-widget">
+                <h2 id="current-day">Monday</h2>
+                <p id="current-date">January 1, 2026</p>
+            </div>
+            
+            <div class="stats-widget">
+                <div class="progress-info">
+                    <span id="progress-percent">0%</span>
+                    <p>Done</p>
+                </div>
+                <div class="progress-circle-container">
+                    <div class="progress-bar-bg">
+                        <div id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="controls">
+            <button id="theme-toggle">🌙</button>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="What's the focus for today?">
+            </div>
+            <button id="add-btn">Add Task</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+
+        <footer>
+            <button id="finish-day-btn">Finish Day</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
